@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>React Fiber 遍历 Fiber 树 Demo</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    #app { display: flex; min-height: 100vh; }
+    #target-root { flex: 1; padding: 20px; background: #fff; border-right: 2px solid #e0e0e0; }
+    #controller-root { flex: 1; padding: 20px; background: #fafafa; }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <div id="target-root"></div>
+    <div id="controller-root"></div>
+  </div>
+  <script type="module" src="./target/main.tsx"></script>
+  <script type="module" src="./controller/main.tsx"></script>
+</body>
+</html>
